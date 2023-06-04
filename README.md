@@ -1,2 +1,2 @@
 # Modul293
-Repository für Übungen in Modul293
+Repository für Projekt-M293
