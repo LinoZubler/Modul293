@@ -338,12 +338,32 @@ article#footer {
   background-color: var(--bg2);
 }
 
-#mail, #impressum {
+#mail, #impressum-link {
   color: var(--clr1)
 }
 
-#mail, #impressum, #up {
+#mail, #impressum-link, #up {
   margin: 0 10px;
+}
+
+#impressum {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4% 24% 4% 8%;
+}
+
+#impressum a {
+  width: 20%;
+  background-color: var(--akz);
+  color: var(--clr2);
+  font-size: 1.2em;
+  margin-top: 10%;
+}
+
+#impressum a:hover {
+  color: var(--clr1);
+  background-color: var(--clr2);
 }
 
 /* Desktop 1080p */
@@ -361,7 +381,7 @@ article#footer {
   body {
     font-size: 18px;
   }
-  #welcome {
+  #welcome, #impressum {
     padding-right: 10%;
     font-size: 12px;
   }
@@ -383,11 +403,11 @@ article#footer {
     height: 8vh;
     background-color: var(--clr1);
   }
-  #welcome {
+  #welcome, #impressum {
     height: 100vh;
     padding: calc(8vh + 4%) 8% 4% 8%;
   }
-  #welcome a {
+  #welcome a, #impressum a {
     width: 100%;
   }
   .navigation {
@@ -419,7 +439,7 @@ article#footer {
   nav > ul > li {
     width: 25%;
   }
-  #welcome {
+  #welcome, #impressum {
     font-size: 12px;
   }
   #welcome img {
