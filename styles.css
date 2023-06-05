@@ -18,6 +18,11 @@ body {
   padding: 0;
   font-family: monospace, sans-serif;
   color: var(--clr2);
+  font-size: 18px;
+}
+
+#welcome {
+  font-size: 15px;
 }
 
 a, input {
@@ -185,12 +190,8 @@ article:not(#home) .content {
 }
 
 #welcome h1 {
-  font-size: 8em;
+  font-size: 6em;
   letter-spacing: 0.2em;
-}
-
-#welcome h2 {
-  font-size: 2em;
 }
 
 #welcome a {
@@ -364,16 +365,6 @@ article#footer {
 #impressum a:hover {
   color: var(--clr1);
   background-color: var(--clr2);
-}
-
-/* Desktop 1080p */
-@media (min-width: 1480px) {
-  body {
-    font-size: 20px;
-  }
-  #welcome {
-    font-size: 16px;
-  }
 }
 
 /* Desktop 720p */
