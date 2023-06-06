@@ -461,4 +461,7 @@ article#footer {
   #welcome h2 {
     font-size: 1.2em;
   }
+  nav > ul > li > a {
+    font-size: 1em;
+  }
 }
