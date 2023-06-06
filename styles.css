@@ -21,10 +21,6 @@ body {
   font-size: 18px;
 }
 
-#welcome {
-  font-size: 15px;
-}
-
 a, input {
   text-decoration: none;
   transition: 0.3s ease;
@@ -95,7 +91,6 @@ nav > ul {
 }
 
 nav > ul > li {
-  width: 12%;
   height: 100%;
   float: right;
 }
@@ -107,6 +102,7 @@ nav > ul > li > a {
   height: 100%;
   color: var(--clr2);
   font-size: 1.2em;
+  padding: 0 2em;
 }
 
 nav > ul > li > a:hover {
@@ -179,7 +175,7 @@ article:not(#home) .content {
   height: 88vh;
   display: flex;
   flex-direction: column;
-  padding: 4% 24% 4% 8%;
+  padding: 4% 28% 4% 8%;
 }
 
 #welcome img {
@@ -190,7 +186,7 @@ article:not(#home) .content {
 }
 
 #welcome h1 {
-  font-size: 6em;
+  font-size: 4em;
   letter-spacing: 0.2em;
 }
 
@@ -215,6 +211,11 @@ article#about > .content {
 article#about > .content img {
   width: 40%;
   margin: auto 4% auto 0;
+}
+
+.link {
+  color: var(--clr2);
+  text-decoration: underline;
 }
 
 /* skills */
@@ -267,8 +268,8 @@ article#portfolio .content {
   gap: 30px;
 }
 
-.projekt img {
-  max-width: 40%;
+.portfolio-image {
+  width: 24vw;
   height: fit-content;
 }
 
@@ -344,7 +345,7 @@ article#footer {
 }
 
 #mail, #impressum-link, #up {
-  margin: 0 10px;
+  margin: 0 1em;
 }
 
 #impressum {
@@ -369,15 +370,8 @@ article#footer {
 
 /* Desktop 720p */
 @media (max-width: 1280px) {
-  body {
-    font-size: 18px;
-  }
   #welcome, #impressum {
     padding-right: 10%;
-    font-size: 12px;
-  }
-  nav > ul > li {
-    width: 16%;
   }
 }
 
@@ -386,13 +380,17 @@ article#footer {
   body {
     font-size: 16px;
   }
-  #home {
-    font-size: 12px;
-  }
   nav {
     position: fixed;
     height: 8vh;
     background-color: var(--clr1);
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav > ul > li > a {
+    padding: 0;
   }
   #welcome, #impressum {
     height: 100vh;
@@ -426,20 +424,14 @@ article#footer {
   }
 }
 
-/* zwischengrösse 600px */
-@media (max-width: 600px) {
-  nav > ul > li {
-    width: 25%;
-  }
-  #welcome, #impressum {
-    font-size: 12px;
-  }
+/* zwischengrösse 640px */
+@media (max-width: 640px) {
   #welcome img {
     height: 12vh;
     width: 12vh;
   }
   #welcome h1 {
-    font-size: 8em;
+    font-size: 4em;
     letter-spacing: 0.1em;
   }
   article#skills > .content > div {
@@ -449,6 +441,9 @@ article#footer {
     flex-direction: column;
     align-items: center;
   }
+  .portfolio-image {
+    width: 100%;
+  }
   article#footer {
     justify-content: space-between;
     padding: 0;
@@ -457,16 +452,13 @@ article#footer {
 
 /* Mobile 400x900 */
 @media (max-width: 468px) {
-  #welcome h1 {
-    font-size: 6em;
-  }
-  #welcome h2 {
-    font-size: 1.6em;
-  }
   article#about > .content img {
     width: 100%;
   }
   #mail {
     display: none;
+  }
+  #welcome h2 {
+    font-size: 1.2em;
   }
 }
