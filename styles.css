@@ -450,7 +450,7 @@ article#footer {
   }
 }
 
-/* Mobile 400x900 */
+/* Mobile 468x900 */
 @media (max-width: 468px) {
   article#about > .content img {
     width: 100%;
@@ -463,5 +463,12 @@ article#footer {
   }
   nav > ul > li > a {
     font-size: 1em;
+  }
+}
+
+/* Mobile 390x900 */
+@media (max-width: 390px) {
+  nav > ul > li > a {
+    font-size: 0.8em;
   }
 }
