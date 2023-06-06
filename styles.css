@@ -372,6 +372,11 @@ article#footer {
   background-color: var(--clr2);
 }
 
+#youtube iframe {
+  width: 100px;
+  height: 56px;
+}
+
 /* Desktop 720p */
 @media (max-width: 1280px) {
   #welcome, #impressum {
