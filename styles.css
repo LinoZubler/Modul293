@@ -18,6 +18,7 @@ body {
   padding: 0;
   font-family: monospace, sans-serif;
   color: var(--clr2);
+  scoll-behavior: smooth;
   font-size: 18px;
 }
 
